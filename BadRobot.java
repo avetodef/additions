@@ -7,14 +7,14 @@ abstract class DeafaultRobot {
 
 class RobotWithHands extends DeafaultRobot{
     {
-        limb = "руки";
+        limb = "рука";
         hardWare = " ";
     }
 }
 
 class RobotWithLegs extends DeafaultRobot{
     {
-        limb = "ноги";
+        limb = "нога";
         hardWare = " ";
     }
 }
@@ -22,14 +22,14 @@ class RobotWithLegs extends DeafaultRobot{
 
 class RobotWithHandsAndKnife extends RobotWithHands {
     {
-        limb = "руки-";
+        limb = "рука-";
         hardWare = " нож";
     }
     protected String msg() { return "y " + name + "a " +"есть " + limb  + hardWare ; }
 }
 class RobotWithHandsAndChainSaw extends RobotWithHands {
     {
-        limb = "руки-";
+        limb = "рука-";
         hardWare = " бензопила ";
     }
     protected String msg() { return "y " + name + "a " + "есть " + limb + hardWare ; }
@@ -37,14 +37,14 @@ class RobotWithHandsAndChainSaw extends RobotWithHands {
 
 class RobotWithLegsAndKnife extends RobotWithLegs {
     {
-        limb = "ноги-";
+        limb = "нога-";
         hardWare = " нож ";
     }
     protected String msg() { return "y " + name + "a " + "есть " + limb  + hardWare ; }
 }
 class RobotWithLegsAndChainSaw extends RobotWithLegs {
     {
-        limb = "ноги-";
+        limb = "нога-";
         hardWare = " бензопила ";
     }
     protected String msg() { return "y " + name + "a " + "есть " + limb  + hardWare ; }
