@@ -2,9 +2,6 @@ package additions;
 
 import java.util.*;
 
-/**
- *
- */
 abstract class Place {
     protected String name;
     protected final List<Weapon> equipment = new ArrayList<>();
