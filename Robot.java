@@ -1,7 +1,7 @@
 package additions;
 
 import java.util.*;
-//ohehigewhifgewiphgpjwigpidfpghh
+
 abstract class Place {
     protected String name;
     protected final List<Weapon> equipment = new ArrayList<>();
@@ -24,34 +24,53 @@ abstract class Place {
     }
 }
 
+/**
+ *
+ */
+
 class Hand extends Place {
     {
         name = "рука-";
     }
 }
 
+/**
+ *
+ */
 class Leg extends Place {
     {
         name = "нога-";
     }
 }
 
+/**
+ *
+ */
 abstract class Weapon {
     protected String name;
 }
 
+/**
+ *
+ */
 class Knife extends Weapon {
     {
         name = "нож";
     }
 }
 
+/**
+ *
+ */
 class Chainsaw extends Weapon {
     {
         name = "бензопила";
     }
 }
 
+/**
+ *
+ */
 class CoolRobot {
     private final String name = "робот";
     private final List<Place> places = new ArrayList<>();
@@ -97,6 +116,9 @@ class CoolRobot {
     }
 }
 
+/**
+ *
+ */
 public class Robot {
     public static void main(String[] args) {
         CoolRobot robot = new CoolRobot();
